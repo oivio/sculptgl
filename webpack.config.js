@@ -27,7 +27,7 @@ module.exports = function (env) {
   var isRelease = env && env.release;
 
   if (!isRelease) {
-    config.devtool = 'eval';
+    config.devtool = 'inline-source-map';
   }
 
   if (isRelease) {
